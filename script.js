@@ -1,6 +1,6 @@
 // nav menu click scroll
 
-const menuItems = document.querySelectorAll('.site-nav a[href^="#"]');
+const menuItems = document.querySelectorAll(".site-nav a href^=['#']");
 
 menuItems.forEach((item) => {
   item.addEventListener("click", scrollToIdOnClick);
@@ -18,10 +18,8 @@ function scrollToIdOnClick(event) {
   });
 }
 
-// end nav menu click scroll
-
-// to top button
+// toTop button
 
 function toTop() {
-  document.documentElement.scrollTop = 0;
+  window.scrollTo(0, 0);
 }
