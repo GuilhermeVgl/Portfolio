@@ -771,7 +771,7 @@ h2 {
 }
 
 #footer .github:hover {
-  background-color: black;
+  background-color: rgb(17, 17, 17);
   color: #fff;
 }
 
