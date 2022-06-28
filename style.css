@@ -100,7 +100,7 @@ body {
   -webkit-animation-name: orbit;
   animation-name: orbit;
   -webkit-animation-duration: 1000s;
-  animation-duration: 300s;
+  animation-duration: 700s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -698,7 +698,7 @@ h2 {
   height: 100vh;
   min-height: 34em;
   text-align: center;
-  margin-top: -250px;
+  margin-top: -550px;
 }
 
 #footer .down-below {
@@ -756,9 +756,23 @@ h2 {
 
 #footer .links a:hover {
   transition: 0.2s ease;
-  background-color: #4690f1;
   text-decoration: none;
   cursor: pointer;
+}
+
+#footer .twitter:hover {
+  background-color: rgb(29, 155, 240);
+  color: #fff;
+}
+
+#footer .linkedin:hover {
+  background-color: #0073b1;
+  color: #fff;
+}
+
+#footer .github:hover {
+  background-color: black;
+  color: #fff;
 }
 
 #footer .links {
