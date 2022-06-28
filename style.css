@@ -820,6 +820,7 @@ h2 {
 #footer .to-top:hover {
   transition: 0.2s ease;
   background-color: #4690f1;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
