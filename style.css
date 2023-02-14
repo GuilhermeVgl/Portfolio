@@ -741,11 +741,11 @@ h2 {
 }
 
 .category-header p {
-  padding-top: 7rem;
+  padding-top: 3rem;
 }
 
 .category-section {
-  margin: 4rem 0;
+  margin: 1rem 0;
 }
 .category-description,
 .archive-description {
@@ -856,6 +856,12 @@ h2 {
   margin-top: -250px;
 }
 
+@media only screen and (max-width: 1500px) {
+  #footer {
+    margin: 3rem 0;
+  }
+}
+
 #footer .down-below {
   justify-content: center;
   display: flex;
@@ -915,16 +921,6 @@ h2 {
   cursor: pointer;
 }
 
-#footer .twitter:hover {
-  background-color: rgb(29, 155, 240);
-  color: #fff;
-}
-
-#footer .linkedin:hover {
-  background-color: #0073b1;
-  color: #fff;
-}
-
 #footer .whatsapp:hover {
   background-color: #25d366;
   color: #fff;
@@ -932,6 +928,16 @@ h2 {
 
 #footer .github:hover {
   background-color: rgb(17, 17, 17);
+  color: #fff;
+}
+
+#footer .twitter:hover {
+  background-color: rgb(29, 155, 240);
+  color: #fff;
+}
+
+#footer .linkedin:hover {
+  background-color: #0073b1;
   color: #fff;
 }
 
