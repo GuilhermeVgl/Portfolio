@@ -11,9 +11,10 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="style.css"
+      href="./css/style.css"
     />
-    <link rel="shortcut icon" href="assinatura.png">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.png">
     <title>Guilherme Vieira | Developer</title>
   </head>
   <body>
@@ -57,8 +58,9 @@
             <div class="satellite-orbit">
               <div class="satellite"></div>
             </div>
-            <div id="photo">
-              <img src="gui3.png" alt="pixelface" class="front" />
+            <div id="photo" onclick="girar()">
+              <img src="./img/gui5.png" alt="pixelface" class="front" />
+              <img width="529" height="529" src="./img/gui6.png" class="back wp-post-image" alt="Cory Hughart" decoding="async" srcset="./img/gui6.png" sizes="(max-width: 529px) 100vw, 529px"/>
             </div>
           </div>
         </div>
@@ -92,7 +94,7 @@
                 title="Em breve!"
                 href="https://guilhermevgl.github.io/Mario-Movie/"
                 style="
-                  background-image: url(Mario.jpeg);
+                  background-image: url(./img/Mario.jpeg);
                 "
                 ><span class="post-preview-title"
                   >Mario-Movie</span
@@ -105,7 +107,7 @@
                 title="Meu Portfolio"
                 href="https://guilhermevgl.github.io/Portfolio/"
                 style="
-                  background-image: url(Portfolio.jpeg);
+                  background-image: url(./img/Portfolio.jpeg);
                 "
                 ><span class="post-preview-title"
                   >My Portfolio</span
@@ -117,7 +119,7 @@
                 class="post-preview"
                 title="Em qual número estou pensando?"
                 href="https://guilhermevgl.github.io/Game-in-JS/"
-                style="background-image: url(firstgame.jpeg)"
+                style="background-image: url(./img/firstgame.jpeg)"
                 ><span class="post-preview-title"
                   >What number am I Thinking?</span
                 ></a
@@ -133,7 +135,7 @@
             <h1 class="about-title">About</h1>
           </header>
           <div id="pixelman">
-            <img src="pixel.png" alt="pixel man" title="Pixel Gui" />
+            <img src="./img/pixel.png" alt="pixel man" title="Pixel Gui" />
           </div>
           <p>What can a Full-Stack Developer Do?</p>
           <p>
@@ -232,6 +234,20 @@
       <!--footer-content-->
     </footer>
     <!--footer-->
-    <script src="script.js"></script>
+    <script>
+      let imageContainer = document.querySelector('#photo');
+      if (imageContainer) {
+       imageContainer.addEventListener('click', function() {
+      let frontImg = imageContainer.querySelector('.front');
+      let backImg = imageContainer.querySelector('.back');
+
+    frontImg.classList.toggle('front');
+    frontImg.classList.toggle('back');
+    backImg.classList.toggle('front');
+    backImg.classList.toggle('back');
+  });
+}
+
+    </script>
   </body>
 </html>
